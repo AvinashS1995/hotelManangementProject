@@ -1,0 +1,21 @@
+<div class="bg-image">
+  <p>
+    <mat-toolbar class="bg-primary border-bottom border-dark">
+      <button mat-icon-button aria-label="Example icon button with a home icon" routerLink="/home">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span style="font-size:xx-large; margin-right: 5px; "><i><b>Paradise Island</b></i></span><span><i>Resorts</i></span>
+      <span class="example-spacer"></span>
+      <section>
+        <div class="example-button-row" *ngIf="navBtn">
+          <button mat-raised-button class="me-2" routerLink="/User"  (click)="userSelectedModule()" >User</button>
+          <button mat-raised-button class="me-2" routerLink="/Admin" (click)="adminSelectedModule()" >Admin</button>
+          <button mat-raised-button class="me-2" routerLink="/Owner" (click)="ownerSelectedModule()" >Owner</button>
+        </div>
+      </section>
+    </mat-toolbar> 
+  </p>
+  <router-outlet></router-outlet>
+</div>
+
+
