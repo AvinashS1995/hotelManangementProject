@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './landing/landing.component';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -28,6 +29,9 @@ import { LandingComponent } from './landing/landing.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+
+    // toaster
+    ToastrModule.forRoot(),
 
 
     //Angular Materials

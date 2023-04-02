@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="child row">
         <div class="effect col text-center" routerLink="/User"
         (click)="userSelectedModule()">
@@ -16,4 +16,18 @@
             <div><h3 class="fs-2 mt-5">Admin</h3></div>
         </div>
     </div>
+</div> -->
+
+<div class="container text-center navigation">
+    <button class="nav-button button1" routerLink="/User" (click)="userSelectedModule()">
+        <i class="bi bi-person-circle me-2 fs-3"></i> User
+    </button>
+    <button class="nav-button button2" routerLink="/Admin"
+    (click)="adminSelectedModule()">
+        <i class="bi bi-person-fill-gear me-2 fs-3"></i> Admin
+    </button>
+    <button class="nav-button button3" routerLink="/Owner"
+    (click)="ownerSelectedModule()">
+        <i class="bi bi-key me-2 fs-3"></i> Owner
+    </button>
 </div>

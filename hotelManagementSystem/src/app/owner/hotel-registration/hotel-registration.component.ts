@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { DataService } from 'src/app/data.service';
 
 @Component({
@@ -15,7 +17,7 @@ export class HotelRegistrationComponent {
   editHotelDetails: any;
   
 
-  constructor(private formbuild: FormBuilder , private DataServ : DataService){ }
+  constructor(private formbuild: FormBuilder , private DataServ : DataService , private toaster:ToastrService , private router : Router){ }
 
 
   ngOnInit(){
@@ -46,7 +48,7 @@ export class HotelRegistrationComponent {
     this.editHotelDetails = this.reactiveForm.value
 
     console.log(this.reactiveForm.value);
-
+    
     if(this.DataServ.edit){
       this.onEditHotel()
     }else{
@@ -61,6 +63,8 @@ export class HotelRegistrationComponent {
     this.DataServ.postNewHotel(this.reactiveForm.value).subscribe();
 
     console.log(this.reactiveForm)
+    this.toaster.success(' New Hotel Registered Successfully')
+    this.router.navigateByUrl('/Owner/ownersuccess')
     
   }
 
@@ -86,7 +90,9 @@ export class HotelRegistrationComponent {
 
   onEditHotel(){
     this.DataServ.patchHotelRequest(this.reactiveForm.value).subscribe();
-  }
 
+    this.toaster.success('Hotel Update Successfully')
+    this.router.navigateByUrl('/Owner/ownersuccess')
+  }
   
 }

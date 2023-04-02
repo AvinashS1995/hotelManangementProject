@@ -6,7 +6,7 @@
       "mobile": "9834253645",
       "email": "abc@gmail.com",
       "username": "CodeKapil1996",
-      "password": "Kapil1234",
+      "password": "12345",
       "confirmpassword": "Kapil1234",
       "gender": "Male",
       "country": "America",
@@ -100,7 +100,7 @@
       "email": "Ash@gmail.com",
       "username": "Ash1234",
       "password": "12345",
-      "confirmpassword": "asdf",
+      "confirmpassword": "12345",
       "gender": "Female",
       "country": "India",
       "hobbies": true,
@@ -114,8 +114,8 @@
       "mobile": "9734253667",
       "email": "Ish@gmail.com",
       "username": "Ish1234",
-      "password": "1234",
-      "confirmpassword": "1234",
+      "password": "12345",
+      "confirmpassword": "12345",
       "gender": "Male",
       "country": "India",
       "hobbies": true,
@@ -146,11 +146,24 @@
       "country": "India",
       "hobbies": true,
       "id": 4
+    },
+    {
+      "firstname": "Amol",
+      "lastname": "Kokate",
+      "mobile": "3366558899",
+      "email": "abhiyavm@gmail.com",
+      "username": "amol123",
+      "password": "12345",
+      "confirmpassword": "12345",
+      "gender": "Male",
+      "country": "India",
+      "hobbies": true,
+      "id": 5
     }
   ],
   "hotelList": [
     {
-      "hotelName": "Marriott Resort and Spa",
+      "hotelName": "Marriott Resort and Spa Avi",
       "rating": "4.5",
       "price": "17495",
       "roomSiz": "425 sq.ft",
@@ -260,14 +273,14 @@
       "id": 10
     },
     {
-      "hotelName": "PK Hotel & Spa",
+      "hotelName": "Hotel Maratha Five star",
       "rating": "4.5",
-      "price": 4500,
-      "roomSiz": "450 ft sq",
-      "roomDis": "Twin Bed",
-      "address": "Asarjan Nanded",
-      "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-10.jpeg",
+      "price": "2000",
+      "roomSiz": "393sq ft",
+      "roomDis": "jumbo",
+      "address": "mumbai",
+      "availability": "yes",
+      "image": "",
       "id": 11
     }
   ]

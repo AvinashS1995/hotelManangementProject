@@ -33,12 +33,15 @@
     
                 <div class="my-2">
                     <!-- <label for="password" class="form-label"></label> -->
-                    <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+                    <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password"
+                    #pass (blur)="getPass(pass.value)">
                 </div>
     
                 <div class="my-2">
                     <!-- <label for="cpassword" class="form-label"></label> -->
-                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password" formControlName="confirmpassword">
+                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password" formControlName="confirmpassword"
+                    #cpass (blur)="getCpass(cpass.value)">
+                    <small class="text-danger" *ngIf="!match && reactiveForm.controls['confirmpassword'].touched && reactiveForm.controls['password'].touched">Confirm password must be same as entered password</small>
                 </div>
     
                 <div>
@@ -71,7 +74,7 @@
                     <label class="py-2"><b>Hobbies :</b><i>  (optional)</i></label>
                     
                     <label for="" class="mx-3">
-                        <input type="checkbox" id="Sports" value="Sports" formControlName="hobbies" >Sports</label>
+                        <input type="checkbox" id="Sports" value="Sports"  formControlName="hobbies" >Sports</label>
                     <label for="" class="mx-3">
                         <input type="checkbox" value="movies" formControlName="hobbies" >Movies</label>
                     <label for="">

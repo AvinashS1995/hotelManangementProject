@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { FormService } from 'src/app/form.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class OwnerSigninComponent {
   apiData : any;
   matchFound : any;
 
-  constructor(private formServ : FormService, private router : Router){ }
+  constructor(private formServ : FormService, private router : Router , private toaster:ToastrService){ }
 
   showSignUpClicked(){
     this.showSignin = false ;
@@ -37,10 +38,13 @@ export class OwnerSigninComponent {
     console.log(this.matchFound);
 
     if(this.matchFound.length){
-      alert(`Welcome ${this.matchFound[0].firstname} ${this.matchFound[0].lastname} you're successfully logged in.`);
+      // alert(`Welcome ${this.matchFound[0].firstname} ${this.matchFound[0].lastname} you're successfully logged in.`);
+      this.toaster.success(`Welcome ${this.matchFound[0].firstname} ${this.matchFound[0].lastname}`,`Login Successfully`)
+
       this.router.navigateByUrl('/Owner/ownersuccess')
     }else{
-      alert('Owner not found'); 
+      // alert('Owner not found');
+      this.toaster.error(`Check your username & password`, `Owner not found`) 
     }
     
 

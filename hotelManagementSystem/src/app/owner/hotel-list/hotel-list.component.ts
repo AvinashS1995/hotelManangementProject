@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { DataService } from 'src/app/data.service';
 
 @Component({
@@ -22,7 +23,7 @@ export class HotelListComponent {
     this.hotelApiData = this.searchHotel()
   }
 
-  constructor(private DataServ : DataService, private router: Router){ }
+  constructor(private DataServ : DataService, private router: Router , private toaster : ToastrService){ }
 
   ngOnInit(){
     this.letResponse()
@@ -42,6 +43,7 @@ export class HotelListComponent {
   onDeleteClicked(id: number){
     this.DataServ.onEditUrlSet(id);
     this.DataServ.deleteHotelRequest().subscribe();
+    this.toaster.success('Hotel Deleted Successfully')
     this.router.navigateByUrl("/Owner/ownersuccess");
   }
 

@@ -12,6 +12,9 @@ export class SignupComponent implements OnInit{
   reactiveForm! : FormGroup ;
   hide: boolean = true;
   hideNoti = true;
+  pass! : string;
+  cpass! : string;
+  match! : boolean;
 
   constructor( private formServ : FormService){ }
 
@@ -58,5 +61,37 @@ export class SignupComponent implements OnInit{
       return {noSpaceAllowed : true}
     }
     return null;
+  }
+
+  getPass(passInput:string){
+    this.pass = passInput;
+    console.log(this.pass); 
+
+    if(this.cpass){
+      if(this.pass === this.cpass){
+        console.log('password matched');
+        this.match = true;
+      }
+      else{
+        console.log('password not matched');
+        this.match = false;
+      }
+    }
+  }
+
+  getCpass(CpassInput:string){
+    this.cpass = CpassInput;
+    console.log(this.cpass);
+    
+    if(this.cpass){
+      if(this.cpass === this.pass){
+        console.log('password matched');
+        this.match = true; 
+      }
+      else{
+        console.log('password not matched');
+        this.match = false; 
+      }
+    }
   }
 }
