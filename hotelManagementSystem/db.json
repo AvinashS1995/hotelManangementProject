@@ -170,7 +170,7 @@
       "roomDis": "King Bed",
       "address": "Bandra Kurla Complex, Mumbai",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-4.jpeg",
+      "image": "assets/hotel-list/hotel-list-4.jpeg",
       "id": 4
     },
     {
@@ -181,7 +181,7 @@
       "roomDis": "Queen Bed",
       "address": "South Mumbai",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-5.jpeg",
+      "image": "assets/hotel-list/hotel-list-5.jpeg",
       "id": 5
     },
     {
@@ -192,7 +192,7 @@
       "roomDis": "Twin Bed",
       "address": "Shreenagar",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-6.jpeg",
+      "image": "assets/hotel-list/hotel-list-6.jpeg",
       "id": 6
     },
     {
@@ -203,7 +203,7 @@
       "roomDis": "2 x Queen Bed",
       "address": "Tangmarg, Shreenagar",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-7.jpeg",
+      "image": "assets/hotel-list/hotel-list-7.jpeg",
       "id": 7
     },
     {
@@ -214,7 +214,7 @@
       "roomDis": "1 King bed or 2 Twin Bed(s)",
       "address": "Mathikere, Bengaluru",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-8.jpeg",
+      "image": "assets/hotel-list/hotel-list-8.jpeg",
       "id": 8
     },
     {
@@ -225,7 +225,7 @@
       "roomDis": "Queen Bed",
       "address": "Ulsoor, Bengaluru",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-9.jpeg",
+      "image": "assets/hotel-list/hotel-list-9.jpeg",
       "id": 9
     },
     {
@@ -236,7 +236,7 @@
       "roomDis": "King Bed",
       "address": "Whitefield, Bengaluru",
       "availability": "Yes",
-      "image": "../../../assets/hotel-list/hotel-list-10.jpeg",
+      "image": "assets/hotel-list/hotel-list-10.jpeg",
       "id": 10
     },
     {
@@ -247,7 +247,7 @@
       "roomDis": "jumbo",
       "address": "mumbai",
       "availability": "yes",
-      "image": "../../../assets/hotel-list/hotel-list-5.jpeg",
+      "image": "assets/hotel-list/hotel-list-5.jpeg",
       "id": 11
     }
   ]
